@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogWeb</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <!--FONT FAMILY-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <!--ICONS-->
+  <link rel="stylesheet" href="font/icomoon/style.css" />
+</head>
+
+<body class="bg-gray-200 font-sans" style="font-family: 'Roboto'">
+  <!--NAVBAR-->
+  <nav
+    class="relative flex flex-col md:flex-row md:justify-between lg:justify-around py-3 px-2 w-full h-auto bg-green-400">
+    <h1 class="text-2xl text-center md:text-left font-thin uppercase text-white cursor-pointer">
+      BlogWeb
+    </h1>
+
+    <!--input-->
+    <div class="flex justify-center md:flex-row flex-row-reverse mt-4 md:mt-0">
+      <input type="search"
+        class="font-thin border rounded h-8 w-56 md:w-72 pl-3 border-transparent focus:outline-none focus:ring-2 focus:rign-purple-600 focus:border-transparent placeholder-gray-200"
+        placeholder="Search" />
+      <button
+        class="focus:outline-none hover:bg-outline-none bg-green-600 hover:bg-green-500 md:mr-0 text-white md:h-8 md:ml-1 py-1 px-2 rounded">
+        <span class="icon-search text-sm"></span>
+      </button>
+    </div>
+    <!--user-->
+    <div class="md:flex md:items-center">
+      <h1 class="invisible md:visible md:inline-block hidden font-semibold text-normal md:mr-14 lg:mr-6">
+        Bryan Cortez
+      </h1>
+      <div
+        class="absolute top-1 right-1 w-12 h-12 cursor-pointer bg-no-repeat bg-center bg-cover rounded-full bg-transparent lg:mr-14"
+        style="background-image: url('http://source.unsplash.com/random/')"></div>
+    </div>
+  </nav>
+
+  <!--BACKGROUND IMAGE-->
+  <div class="w-full h-72 bg-center bg-cover bg-no-repeat bg-fixed" style="background-image: url('img/fondo.jpg')">
+    <div class="flex justify-center items-center bg-blue-500 bg-opacity-50 w-full h-full">
+      <h1 class="uppercase font-semibold text-gray-200 text-4xl md:text-5xl text-center overflow-ellipsis">
+        Bienvenid@s a Mi Blog
+      </h1>
+    </div>
+  </div>
+
+  <!--CARDS-->
+  <div class="mx-3 md:mx-10 lg:mx-16 flex flex-col mt-5 p-10 h-auto">
+    <div
+      class="w-full rounded-lg h-90 md:h-auto lg:h-72 shadow-lg bg-white md:grid md:grid-cols-5 flex flex-col items-center">
+      <div class="md:col-span-1 -mt-6 md:-ml-6 w-56 h-48 bg-cover shadow-lg bg-center"
+        style="background-image: url('http://source.unsplash.com/random/')"></div>
+      <div
+        class="md:ml-16 lg:ml-2 p-5 md:h-full md:col-span-4 flex flex-col justify-between md:justify-evenly md:items-end lg:items-start">
+        <div class="text-sm">
+          <div class="font-medium flex flex-row-reverse lg:flex-row">
+            <div class="text-gray-500">
+              <span class="icon-man-user text-lg mx-2"></span>
+            </div>
+            <h3 class="text-cyan-600 capitalize">Lorem ipsum dolor sit.</h3>
+          </div>
+          <div class="font-thin flex flex-row-reverse lg:flex-row">
+            <div class="text-gray-500">
+              <span class="icon-calendar text-lg mx-2"></span>
+            </div>
+            <h3 class="text-cyan-600 capitalize">18/12/2020</h3>
+          </div>
+        </div>
+        <h1 class="truncate text-blue-500 my-1 md:my-0 text-xl font-semibold uppercase">
+          Lorem, ipsum dolor.
+        </h1>
+        <p class="my-2 md:my-1 text-sm overflow-clip md:text-right lg:text-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+          neque? Deleniti excepturi unde vitae enim reprehenderit, minus totam
+          quaerat dolorem amet fugiat et quia ratione aut error dolor
+          molestiae maiores? Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Maxime, odio! Sunt ab minima tempora nihil
+          excepturi doloremque minus reprehenderit omnis.
+        </p>
+        <button type="button"
+          class="w-24 h-12 outline-none focus:outline-none hover:bg-green-400 bg-green-500 rounded-lg text-white">
+          View Post
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
